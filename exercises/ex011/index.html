@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Midia em HTML</title>
+</head>
+<body>
+         <h1>Imagens dinamicas </h1>    
+         <p>Tente abrir esse site em varios outros dispositivos diferentes ou simplismente  aumentar ou diminuir a tela do seu navegador</p> 
+         
+         <picture>
+      <source media="(max-width: 750px )" srcset="imagens/foto-p" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m" type="image/png">
+      <img src="Imagens/foto-g.png" alt="imagem flexivel">
+
+       <h1>Reproduzindo Áudio</h1> 
+       <p>Aprendendo a inserir audio no seu site</p> 
+<!--essa primeira forma funcionou perfeitamente no meu navegador-->
+       <audio src="Midias/DEAN - love _ A COLORS SHOW(MP3_70K).mp3"controls autoplay ></audio>
+<!--Outra forma e formatos diferentes de inserir audio-->
+<!--Essa segunda forma nao funcionou no meu navegador-->
+    <audio preload="metadata" autoplay controls loop> 
+     <source src="Midias/DEAN - love _ A COLORS SHOW(MP3_70K).mpge" type="audio/mpge">
+     <source src="Midias/DEAN - love _ A COLORS SHOW(MP3_70K).ogg" type="audio/ogg">
+     <source src="Midias/DEAN - love _ A COLORS SHOW(MP3_70K).wav" type="audio/wav">
+    <!--Se nenhum desses formatos de midia funcioaram infelizmente seu navegador tá maluco! -->
+    </audio>
+   </picture>      
+</body>
+</html>
