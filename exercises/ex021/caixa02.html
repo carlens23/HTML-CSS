@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color:rgb(24, 24, 24) ;
+            padding: 3px;
+            box-shadow: 2px 1px 14px 6px rgba(218, 213, 213, 0.5);
+        }
+        nav > a {
+           text-decoration: none;
+           color: white;
+           font-weight: bold;
+           margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 4px 4px 9px 0 rgb(83, 79, 79);
+        }
+
+        article{
+            background-color:lightgrey ;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(100, 94, 94);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: rgba(32, 30, 30, 0.596);
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ao vivo!!!</h1>
+        <nav> 
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p> noticias de esportes, politica, tecnologia e muito mais...</p>
+        </section>
+
+        <section id="noticias">
+        </section>
+        <article>
+            <h2>Noticias sobre o brasil e o mundo</h2>
+            <h3>Lula fala em preocupação com aumento de exigências para acordo com UE; Von der Leyen quer conclusão ainda este ano</h3>
+
+            <p>O presidente Luiz Inácio Lula da Silva (PT) se reuniu nesta segunda-feira (12) com a presidente da Comissão Europeia, Ursula von der Leyen, no Palácio do Planalto, em Brasília.
+
+                Em coletiva de imprensa após encontro bilateral, Lula disse que o Brasil tem preocupações com instrumentos adicionais ao acordo com a União Europeia que aumentam as obrigações do país e impõem sanções em caso de descumprimento.
+                
+                “Expus à presidente Van Der Leyen as preocupações do Brasil com o instrumento adicional ao acordo apresentado pela União Europeia em março deste ano, que amplia as obrigações do Brasil e as torna objeto de sanções em caso de descumprimento”.
+                
+                “A premissa que deve existir entre parceiros estratégicos é a da confiança mútua e não de desconfiança e sanções”, acrescentou.
+                
+                O acordo Mercosul-União Europeia foi um dos tópicos dicutidos na reunião.
+                
+                Ursula declarou que ambos acreditam que é chegada a hora de concluir o acordo, que está em discussão desde 1999 e foi assinado em 2019, mas ainda necessita da ratificação dos países.
+                
+                “Temos a ambição de terminar o quanto antes, o mais tardar até o final do ano”, revelou.
+            </p>
+            <p> <a href="https://www.cnnbrasil.com.br/internacional/lula-fala-em-preocupacao-com-aumento-de-exigencias-para-acordo-com-ue-von-der-leyen-quer-conclusao-ainda-este-ano/">Leia mais</a></p>
+
+            <aside>
+                <p>Artigo escrito por Darley oslin</p>
+            </aside>
+        </article>
+    </main>
+
+    <footer>
+        <p>Desenvolvido pelo carlens</p>
+    </footer>
+
+    <div id="bola"></div>
+</body>
+</html>
